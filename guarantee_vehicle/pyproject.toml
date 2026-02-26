@@ -14,8 +14,7 @@ dependencies = [
   "pyyaml>=6.0",
   "pydantic>=2.6",
   "matplotlib>=3.7",
-  "openpyxl>=3.1",
-  "streamlit>=1.36"
+  "openpyxl>=3.1"
 ]
 
 [tool.setuptools]

@@ -18,18 +18,6 @@ pip install -e .
 python -m guarantee_vehicle.cli --config examples/config_example.yaml --excel "/path/to/FX Data and Interest rates.xlsx"
 ```
 
-## Dashboard
-Run a standalone browser dashboard with upload/download workflow:
-```bash
-streamlit run src/guarantee_vehicle/dashboard.py
-```
-
-Dashboard features:
-- Upload your `.xlsx` directly in the app (no CLI path required).
-- Adjust workbook mapping inputs (sheet names/row/column indices and rate keys) in the sidebar.
-- Compute investor-level returns (equity ROE, mezz return, guarantor ROE) with leverage as a direct input.
-- Download a prefilled template Excel file based on the currently loaded data so you can tweak and re-upload.
-
 ## Outputs
 - `outputs/report.md`
 - `outputs/figures/leverage_vs_roe.png`
