@@ -19,12 +19,16 @@ python -m guarantee_vehicle.cli --config examples/config_example.yaml --excel "/
 ```
 
 ## Dashboard
-Run an interactive browser dashboard for investor-specific returns and leverage sensitivity:
+Run a standalone browser dashboard with upload/download workflow:
 ```bash
-streamlit run src/guarantee_vehicle/dashboard.py -- --config examples/config_example.yaml
+streamlit run src/guarantee_vehicle/dashboard.py
 ```
 
-The dashboard lets you input leverage directly and shows ROEs for equity, mezz, and guarantor investors.
+Dashboard features:
+- Upload your `.xlsx` directly in the app (no CLI path required).
+- Adjust workbook mapping inputs (sheet names/row/column indices and rate keys) in the sidebar.
+- Compute investor-level returns (equity ROE, mezz return, guarantor ROE) with leverage as a direct input.
+- Download a prefilled template Excel file based on the currently loaded data so you can tweak and re-upload.
 
 ## Outputs
 - `outputs/report.md`

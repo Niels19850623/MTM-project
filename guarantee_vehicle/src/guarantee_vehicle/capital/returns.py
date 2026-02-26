@@ -7,7 +7,7 @@ def bps_to_amount(bps: float, notional: float) -> float:
     return bps / 10000.0 * notional
 
 
-def _stack_base_percents(cfg: AppConfig) -> tuple[float, float, float, float | None, float | None]:
+def _stack_base_percents(cfg: AppConfig) -> tuple[float, float, float, float | None, float | None, float | None]:
     equity_pct = 0.0
     mezz_pct = 0.0
     cg_pct = 0.0
